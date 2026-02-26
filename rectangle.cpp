@@ -46,7 +46,7 @@ void processInput(GLFWwindow* window)
 
 
 }
-
+/*                                              */
 int main()
 {
     // --- 3. تهيئة GLFW وإعداد النافذة ---
