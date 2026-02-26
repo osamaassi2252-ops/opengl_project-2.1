@@ -121,14 +121,16 @@ int main()
     // حذف الشيدرز المنفصلة لأننا ربطناها في البرنامج ولم نعد بحاجة لها
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
-// --- 6. تعريف البيانات (المثلث) ---
+    // --- 6. تعريف البيانات (المثلث) ---
     float vertices[] = {
          -0.5f, -0.5f, 0.0f, // يسار أسفل
           0.5f, -0.5f, 0.0f, // يمين أسفل
-          0.0f,  0.5f, 0.0f,  // أعلى منتصف
+          0.5f,  0.5f, 0.0f,  // أعلى منتصف
 
- 
-    
+      0.5f,  0.5f, 0.0f, // 
+    -0.5f,  0.5f, 0.0f, // 
+    -0.5f, -0.5f, 0.0f
+
     };
 
     // --- 7. إعداد VBO و VAO ---
@@ -170,7 +172,7 @@ int main()
         // ج. الرسم
         glUseProgram(shaderProgram); // تفعيل الشيدر
         glBindVertexArray(VAO); // تفعيل كائن المثلث
-        glDrawArrays(GL_TRIANGLES, 0, 3); // ارسم مثلثاً من 3 رؤوس
+        glDrawArrays(GL_TRIANGLES, 0, 6); // ارسم مثلثاً من 3 رؤوس
         // glBindVertexArray(0); // لا داعي لفك الربط في كل فريم
 
         // د. تبديل الـ Buffers ومعالجة الأحداث
