@@ -24,5 +24,8 @@
     <ClCompile Include="برمجة أربع ازرار و الشفافية.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ساعة حائط بعقارب.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

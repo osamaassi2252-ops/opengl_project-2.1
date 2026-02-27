@@ -132,6 +132,7 @@
     <ClCompile Include="rectangle.cpp" />
     <ClCompile Include="triangle.cpp" />
     <ClCompile Include="برمجة أربع ازرار و الشفافية.cpp" />
+    <ClCompile Include="ساعة حائط بعقارب.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
